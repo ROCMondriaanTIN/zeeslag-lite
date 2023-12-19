@@ -1,0 +1,44 @@
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: azure;
+	border-radius: 12px;
+
+	display: flex;
+	justify-content: space-between;
+}
+.player-grids {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+}
+.enemy-grids {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+}
+.grid {
+	width: 48px;
+	height: 48px;
+	box-sizing: border-box;
+	border: 1px solid gainsboro;
+}
+.grid:hover {
+	border: 1px solid gray;
+}
+.grid-player {
+}
+.grid-enemy {
+}
+.ship-player {
+	background-color: aquamarine;
+}
+.ship-enemy {
+	background-color: coral;
+}
+.grid-hit {
+	background-color: red;
+}
+.grid-missed {
+	background-color: lightblue;
+}
